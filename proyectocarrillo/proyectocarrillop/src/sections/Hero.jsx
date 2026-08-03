@@ -1,0 +1,45 @@
+import React, { useEffect } from 'react'
+import heroimg from '../assets/hero.webp'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+
+
+function Hero() {
+
+  useEffect(() =>{
+    AOS.init({
+      duration:800,
+      delay:200,
+      once:false,
+    })
+  }, []);
+  return (
+    <div id='hero' className="relative w-full lg:h-screen py-30 h-auto bg-cover
+    bg-center z-20" style={{ backgroundImage: `url(${heroimg})`}}>
+      {/* black overlay */}
+      <div className='absolute inset-0 bg-black/40'></div>
+
+      {/* content */}
+      <div className='w-full relative z-10 flex flex-col justify-center items-center
+      h-full gap-6 text-white px-6'>
+        <h1 data-aos="zoom-in" data-aos-delay="100" className='lg:text-7xl text-4xl
+        capitalize text-center font-fakhwang font-bold'>Explore very beautiful <br />
+         Carrillo</h1>
+
+         <p data-aos="zoom-in" data-aos-delay="200" className='text-lg text-center
+         lg:w-[50%] w-full'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore neque, voluptatibus deleniti, delectus nostrum ipsa possimus reprehenderit minus dolorem odio, magnam reiciendis facilis ipsam similique esse illum fuga? Ullam, quibusdam.\ </p>
+
+        <button data-aos="slide-up" data-aos-delay="300" className='bg-orange-600 hover:bg-black hover:text-white px-8 py-3 font-semibold capitalize rounded-md 
+        mt-5 cursor-pointer'>Book Now</button>
+      </div>
+      </div>
+      
+        
+      
+    
+    
+  )
+}
+
+export default Hero
