@@ -30,10 +30,9 @@ function Explore() {
   return (
     <section
       id="explora"
-      className="relative w-full bg-maya-sand rounded-t-[45px] py-10 px-5 sm:px-8 lg:px-12 mx-auto"
+      className="relative w-full bg-maya-sand t-[45px] py-10 px-5 sm:px-8 lg:px-12 mx-auto"
     >
-      {/* franja decorativa superior estilo greca maya */}
-      <div className="maya-band absolute top-0 left-0 right-0 h-2 rounded-t-[45px]" aria-hidden="true" />
+    
 
       {/* Encabezado */}
       <div data-aos="slide-up" data-aos-delay="300" className="flex justify-between items-start pt-2">
