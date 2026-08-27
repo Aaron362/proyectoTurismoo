@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 /* ---------- Paleta de identidad Zona Maya ---------- */
+
 :root {
   --maya-terracotta: #b5541b;
   --maya-jade: #0f6b4c;
@@ -17,9 +18,12 @@
   --color-maya-ink: var(--maya-ink);
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: aliceblue;
+.html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+  background-color: #000;
 }
 
 @layer utilities {
@@ -28,7 +32,7 @@ body {
   }
 
   .font-fakhwang {
-    font-family: 'Fahkwang', sans-serif;
+    font-family: sans-serif;
   }
 
   .scrollbar-hide::-webkit-scrollbar {

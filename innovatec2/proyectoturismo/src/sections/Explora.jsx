@@ -32,7 +32,6 @@ function Explore() {
       id="explora"
       className="relative w-full bg-maya-sand t-[45px] py-10 px-5 sm:px-8 lg:px-12 mx-auto"
     >
-    
 
       {/* Encabezado */}
       <div data-aos="slide-up" data-aos-delay="300" className="flex justify-between items-start pt-2">
@@ -111,10 +110,10 @@ function Explore() {
                 role="button"
                 tabIndex={0}
                 onKeyDown={(e) => e.key === "Enter" && setSelected(a)}
-                className="relative h-[280px] sm:h-[320px] rounded-3xl overflow-hidden bg-cover bg-center cursor-pointer group"
+                className="relative h-70 sm:h-80 rounded-3xl overflow-hidden bg-cover bg-center cursor-pointer group"
                 style={{ backgroundImage: `url(${a.image})` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent group-hover:from-black/90 transition" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent group-hover:from-black/90 transition" />
 
                 <span className="absolute top-4 left-4 bg-maya-gold text-maya-ink text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                   {a.categoryLabel}

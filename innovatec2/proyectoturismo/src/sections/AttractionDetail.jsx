@@ -111,7 +111,7 @@ function AttractionDetail({ attraction, onClose }) {
       onClick={onClose}
     >
       <div
-        className="relative bg-maya-sand w-full sm:max-w-xl sm:rounded-[32px] rounded-t-[32px] max-h-[95vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp"
+        className="relative bg-maya-sand w-full sm:max-w-xl sm:rounded-4xl rounded-t-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Imagen principal */}
@@ -119,7 +119,7 @@ function AttractionDetail({ attraction, onClose }) {
           className="relative h-64 sm:h-72 bg-cover bg-center"
           style={{ backgroundImage: `url(${attraction.image})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-black/20" />
 
           <button
             onClick={onClose}
